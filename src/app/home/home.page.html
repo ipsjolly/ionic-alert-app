@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Alerts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <h4>Alert</h4>
+  <ion-button color="primary" expand="full" (click)="showAlert()">Show Alert</ion-button>
+
+  <h4>Confirm</h4>
+  <ion-button color="warning" expand="full" (click)="showConfirm()">Show Confirm</ion-button>
+
+  <h4>Prompt</h4>
+  <ion-button color="danger" expand="full" (click)="showPrompt()">Show Prompt</ion-button>
+
+  <code>{{selectedData | json }}</code>
+
+</ion-content>
